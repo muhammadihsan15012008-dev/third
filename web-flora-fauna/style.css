@@ -1,0 +1,213 @@
+/* Reset dasar untuk menghilangkan margin/padding bawaan browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Pengaturan latar belakang seluruh halaman */
+body {
+    background-color: #f4f9f4;
+    color: #3eb365;
+    line-height: 1.6;
+}
+
+/* Bagian Header & Judul Website */
+header {
+    background-color: #2e7d32; /* Warna hijau alam */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+/* Navigasi Menu Link */
+nav ul {
+    list-style: none; /* Menghilangkan tanda titik (bullet) */
+    display: flex; /* Membuat menu berjajar ke samping (horizontal) */
+    justify-content: center;
+    background-color: #1b5e20; /* Warna hijau lebih gelap */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    padding: 14px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* Efek saat kursor diarahkan ke menu link (Hover) */
+nav ul li a:hover {
+    background-color: #4caf50;
+}
+
+/* Penanda menu halaman yang sedang aktif */
+nav ul li a.aktif {
+    background-color: #81c784;
+    color: #1b5e20;
+}
+
+/* Bagian Konten Utama (Main) */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+main h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+main p {
+    margin-bottom: 10px;
+}
+
+/* Bagian Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2e7d32;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Styling Khusus untuk Galeri Foto */
+.galeri-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.galeri-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fafafa;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.galeri-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.galeri-item p {
+    padding: 10px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+/* Styling Khusus Formulir Kontak */
+.form-kontak {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.form-group input, 
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+button.btn-kirim {
+    background-color: #2e7d32;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.btn-kirim:hover {
+    background-color: #1b5e20;
+}
+
+/* Styling Kartu Detail Flora & Fauna */
+.flora-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.flora-card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f9fdf9;
+    border: 1px solid #c8e6c9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.flora-card img {
+    width: 100%;
+    max-width: 250px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.flora-info {
+    padding: 15px;
+    flex: 1;
+}
+
+.flora-info h3 {
+    color: #2e7d32;
+    margin-bottom: 8px;
+}
+
+.flora-info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.flora-info .latin {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Flora & Fauna</title>
+    <!-- Menghubungkan ke file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Bagian Header & Navigasi -->
+    <header>
+        <h1>Dunia Flora & Fauna</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="flora.html">Flora</a></li>
+                <li><a href="fauna.html">Fauna</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <!-- Kelas 'aktif' dipindahkan ke menu Kontak -->
+                <li><a href="kontak.html" class="aktif">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Bagian Konten Kontak -->
+    <main>
+        <section>
+            <h2>Hubungi Kami</h2>
+            <p>Punya pertanyaan atau masukan tentang keanekaragaman flora dan fauna? Silakan isi formulir di bawah ini:</p>
+            
+            <form action="#" method="post" class="form-kontak">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama kamu..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan email kamu..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pesan">Pesan:</label>
+                    <textarea id="pesan" name="pesan" placeholder="Tuliskan pesanmu di sini..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-kirim">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Bagian Footer -->
+    <footer>
+        <p>&copy; 2026 Website Flora & Fauna</p>
+    </footer>
+
+</body>
+</html>
